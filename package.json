@@ -1,0 +1,31 @@
+{
+  "name": "@dongxi.dev/utils",
+  "version": "0.1.0",
+  "description": "常用工具常量、函数、类等",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "prepublishOnly": "pnpm build",
+    "pretest": "",
+    "test": ""
+  },
+  "keywords": [],
+  "author": "章生 <me@jiluo.cc>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "tsup": {
+    "entry": [
+      "source"
+    ],
+    "clean": true,
+    "format": "esm",
+    "minify": true,
+    "treeshake": true,
+    "dts": true
+  }
+}
